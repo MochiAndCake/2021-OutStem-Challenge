@@ -1,0 +1,64 @@
+<div id = "signUpPage">
+
+    <div class = "split left">
+        <a href = "">
+            <img src = "../../assets/backdrop.jpg" alt = "Students cheering." class = image>
+        </a>
+    </div>
+
+    <div id = "contentWrapper" class = "split right">
+        <div id = "content">
+            <div class = "header">
+                <h1>Sign up to begin your adventure</h1>
+                <h2>Already a member? <a href = "">Login instead</a>
+                </h2>
+            
+                <!-- Button with Google -->
+                <button class = "btnGoogle">
+                    <img src = "../../assets/google_logo.svg" alt = "Google logo" width = "20" height = "20">
+                    Continue with Google
+                </button>
+            
+                <h3>or sign up with email</h3>
+            </div>
+
+            <form class="input" [formGroup]="form">
+                <div class="form-group" [ngClass]="showError('email')">
+                    <label>Email
+                        <br>
+                        <input type="email" formControlName="email" id="email">
+                        <div *ngIf="isFieldInvalid('email')">
+                            <div *ngIf="form.get('email').hasError('required')">Email is required.</div>
+                            <div *ngIf="form.get('email').hasError('pattern')">This doesn't look like an email, please try again.</div>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="form-group" [ngClass]="showError('password')">
+                    <label>Password (min. 8 characters)
+                        <br>
+                        <input type="password" formControlName="password" id="password"> 
+                        <div *ngIf="isFieldInvalid('password')">
+                            <div *ngIf="form.get('password').hasError('required')">Password is required.</div>
+                            <div *ngIf="form.get('password').hasError('minlength')">Password must be at least 8 characters long.</div>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="form-group" [ngClass]="showError('checkbox')">
+                    <input type="checkbox" formControlName="checkbox" id="checkbox">
+                    I agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+                    <div *ngIf="isFieldInvalid('checkbox') && form.get('checkbox').hasError('required')">
+                        Checkbox is required.
+                    </div>
+                </div>
+                
+            
+                <button class="btnSubmit" (click)="onSubmit()">Get Started</button>
+            </form>           
+        </div>
+    </div>
+
+    
+
+</div>

@@ -1,0 +1,80 @@
+.split{
+    height: 100%;
+    position: fixed;
+    padding-top: 0px;
+}
+
+.left{
+    width: 60%;
+    left: 0;
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.right{
+    right: 0;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 7%;
+    justify-content: center;
+    border: #333333;
+}
+
+.btnGoogle{
+    background-color: #FFFFFF;
+    border-color: #B7B7B7;
+}
+
+.btnSubmit{
+    background-color: #F63E34;
+    color: #FFFFFF;
+}
+
+button{
+    border-radius:0.3em;
+}
+
+input{
+    outline-color: #B7B7B7;
+}
+
+input:focus{
+    outline-color: #C33129;
+}
+
+h1{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+h3{
+    overflow: hidden;
+    text-align: center;
+    color: #B7B7B7;
+}
+  
+h3:before, h3:after{
+    background-color: #B7B7B7;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+h3:before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+h3:after{
+    left: 0.5em;
+    margin-right: -50%;
+}
+

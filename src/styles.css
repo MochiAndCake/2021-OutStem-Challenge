@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: #FFFFFF;
+    color: #333333;
+    font-weight: normal;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+a{
+    color:#F63E34;
+    text-decoration: underline;
+}
