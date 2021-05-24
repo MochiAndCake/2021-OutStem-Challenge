@@ -1,61 +1,84 @@
 .split{
     height: 100%;
     position: fixed;
-    padding-top: 0px;
+    top: 0px;
+    overflow-x: hidden;
 }
 
+/* 
+   ===============================================
+   FORMATING IMAGE + LOGO ON LEFT OF SCREEN
+   ===============================================
+*/
+
 .left{
-    width: 60%;
     left: 0;
+    width: 60%;
 }
 
 .image{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: -1080px;
+    bottom: -1080px;
+    left: -1620px;
+    right:-1620px;
+    margin: auto;
 }
+
+.logo{
+    max-width: 10%;
+    max-height: 10%;
+    position: absolute;
+    left: 2.5%;
+    bottom: 2.5%;
+}
+
+/* 
+   ===============================================
+   FORMATING CONTENT ON RIGHT SIDE OF SCREEN
+   ===============================================
+*/
 
 .right{
     right: 0;
-    width: 30%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 7%;
-    justify-content: center;
-    border: #333333;
-}
+    width: 40%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 7%;
+    display:block;
+} 
 
-.btnGoogle{
-    background-color: #FFFFFF;
-    border-color: #B7B7B7;
-}
+/* 
+   ===============================================
+   FORMATING THE CONTENT TITLES
+   ===============================================
+*/
 
-.btnSubmit{
-    background-color: #F63E34;
-    color: #FFFFFF;
-}
-
-button{
-    border-radius:0.3em;
-}
-
-input{
-    outline-color: #B7B7B7;
-}
-
-input:focus{
-    outline-color: #C33129;
+.container{
+    display: inline-block;
+    margin: auto;
 }
 
 h1{
+    display: block;
     font-weight: bold;
     font-size: xx-large;
+}
+
+h2{
+    font-size: medium;
+    margin-bottom: 3em;
 }
 
 h3{
     overflow: hidden;
     text-align: center;
+    font-size: medium;
     color: #B7B7B7;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
   
 h3:before, h3:after{
@@ -76,5 +99,81 @@ h3:before{
 h3:after{
     left: 0.5em;
     margin-right: -50%;
+}
+
+.error{
+    color: #DC3545;
+}
+
+/* 
+   ===============================================
+   FORMATING INPUT BOXES
+   ===============================================
+*/
+
+.textbox{
+    width: 100%;
+    display: inline;
+    border-style: solid;
+    border-color: #B7B7B7;
+    padding: 0.7em;
+    margin-bottom: 1em;
+}
+
+.textbox:focus{
+    outline-color: #C33129;
+}
+
+.txtlabel{
+    width: 100%;
+    color: #333333;
+    display: block;
+}
+
+/* 
+   ===============================================
+   FORMATING INPUT BOXES
+   ===============================================
+*/
+
+.checkbox{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.cbxlabel{
+    font-size: medium;
+    color: #333333;
+    margin: 0.5em;
+}
+
+/* 
+   ===============================================
+   FORMATING BUTTONS
+   ===============================================
+*/
+
+button{
+    border-radius:0.3em;
+}
+
+.btnGoogle{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-color: #B7B7B7;
+    border-style: solid;
+    display: inline;
+    padding: 0.7em;
+}
+
+.btnSubmit{
+    width: 100%;
+    background-color: #F63E34;
+    border-color: #F63E34;
+    color: #FFFFFF;
+    font-size: large;
+    border-style: solid;
+    display: inline;
+    padding: 0.7em;
 }
 
