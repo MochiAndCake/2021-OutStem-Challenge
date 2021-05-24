@@ -1,5 +1,7 @@
 # OutstemChallenge
 
+The site is hosted here: https://mochiandcake.github.io/2021-OutStem-Challenge/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
 ## Development server
@@ -13,6 +15,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+To build the /docs folder that's used for GitHub Pages in this case, I used `npm run build -- --prod --baseHref="https://mochiandcake.github.io/2021-OutStem-Challenge/"`.
 
 ## Running unit tests
 
